@@ -1,0 +1,34 @@
+{
+  "heroes": [
+    {
+      "name": "Olaf",
+      "baseLife": 500,
+      "ultimate": "Ragnarock",
+      "category": "Fighter"
+    },
+    {
+      "name": "Ahri",
+      "baseLife": 420,
+      "ultimate": "Ímpeto Espiritual",
+      "category": "Mage"
+    },
+    {
+      "name": "Teemo",
+      "baseLife": 430,
+      "ultimate": "Armadilha venenosa",
+      "category": "Sniper"
+    },
+    {
+      "name": "Nasus",
+      "baseLife": 550,
+      "ultimate": "Furia das Areias",
+      "category": "Tanker"
+    },
+    {
+      "name": "Lux",
+      "baseLife": 420,
+      "ultimate": "Centelha final",
+      "category": "Mage"
+    }
+  ]
+}
