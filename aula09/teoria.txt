@@ -1,0 +1,29 @@
+  
+Como é a comunicação entre o backend e o frontend ?
+O frontend irá enviar uma REQUISIÇÃO ao backend que irá processar a requisição e preparar
+os dados para oferecer uma RESPOSTA
+
+Caso de uso - Login
+Usuário digita e-mail e senha, e, ao clicar no botão enviar se depara com um gif de loading...
+Quando o usuário clicou no botão enviar foi enviada uma requisição para o backend com as
+informações que o usuário digitou em tela, ou seja, seu e-mail e sua senha.
+Exemplo de uma requisição: { email: "vtorres@digitalhouse.com", senha: "123456" }
+O backend terá a função de aplicar validações para oferecer uma resposta, por exemplo:
+1ª validação: o e-mail existe na base ? se existir seguimos para 2ª validação, senão,
+retornaremos uma resposta de erro para o usuário.
+2ª validação: se a senha confere com a mesma senha armazenada no banco de dados, caso exista
+ele irá redirecionar o usuário para a página desejada, senão, retornaremos uma resposta de erro
+para o usuário.
+No final o backend ofereceu uma resposta de sucesso que foi redirecionar o usuário para página
+desejada, e, caso ocorra algum erro durante as duas validações feitas a resposta de erro será
+retornada.
+
+REQUISIÇÃO - Request e RESPOSTA - Response.
+
+Para trabalharmos com essa comunicação utilizamos os protocolos HTTP para nos ajudar.
+Quais são os métodos HTTP ? 
+  GET     (obter informações) - Listar, 
+  POST    (processar informações para serem armazenadas) - Salvar, 
+  PUT     (processa informações para alterá-las) - Atualizar, 
+  DELETE  (processar informação que já existe para exclui-lá) - Excluir,
+  PATCH   (GET, POST, PUT, DELETE)
